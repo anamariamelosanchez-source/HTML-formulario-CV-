@@ -1,0 +1,65 @@
+
+<html>
+    <head>
+      <title> Formularios </title>
+      <style>
+        body { text-align: center; font-family: 'Times New Roman', Times, serif;}
+        form {display: inline-block; text-align: left;}
+        .campo {margin-bottom: 15px;}
+      </style>
+    </head>
+    <body>
+    <h1>Registro de Usuarios</h1>
+    <form action="Mailto: una prueba" method="post">
+      <br> <br> <br>
+          <label for="nombre "> Nombres: </label>
+          <input type = "text" placeholder=" Nombre"  required minlength=3 required maxlength=64 size= 64>
+          <br><br><br>
+          <label for="apellidos "> Apellidos: </label>
+          <input type = "text" name="nombre"placeholder="Apellidos"  required minlength=3 required maxlength=64 size= 63>
+          <br><br><br>
+          <label for="tipo"> Tipo de Documento </label>
+          <input type="radio" name = "documento" value="1"> TI 
+          <input type="radio" name = "documento" value="2"> CC 
+          <input type="radio" name = "documento" value="3"> CE 
+          <input type="radio" name = "docuemnto" value="4"> PS 
+          <br><br><br>
+          <label for="documento"> N° de Documento:  </label>
+          <input type="number" name="cedula" placeholder="Ingrese su número de documento"  required max=10 size= 55><BR>
+          <br><br><br>
+          <label for="direccion">Dirección: </label>
+          <input type = "text" name="direccion "placeholder="Ingrese su dirección"  maxlength=3 size= 64>
+          <br><br><br>
+          <label for="fijo">Telefono Fijo: </label>
+          <input type = "number" name="telefono fijo "placeholder="Ingrese su  Fijo" size= 15>
+          <br><br><br>
+          <label for="celular">Telefono Celular: </label>
+          <input type = "number" name="telefono celular "placeholder="Ingrese su  Celular"   required max=10 size= 25>
+          <br><br><br>
+          <label for="celular">Correo Electrónico: </label>
+          <input pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-] +/.[A-Z]{2,4}$" type = "email" name="correo"placeholder="example@example.com" required >
+          <br><br><br>
+          <label for="celular">Usuario: </label>
+          <input type = "text" name="usuario "placeholder="Ingrese su Usuario"  required minlength=3 required maxlength=16 size= 65>
+          <br><br><br>
+          <label for="celular">Contraseña: </label>
+          <input pattern= "[A-Z]{1}+[a-z]{2}" type = "password" name="contraseña " placeholder="Ingrese su Contraseña"  min = 5 required maxlength=16  size= 62>
+          <br><br><br>
+          <label for="celular">Fecha de Ingreso: </label>
+          <input type = "date" name="fecha " required min = "2026-02-15" required = "2026-03-10" size= 15>
+          <br><br><br>
+          <label for="celular">Hobbies: </label><br><br>
+          <input type = "checkbox" name="Pintar " value="no"> Pintar 
+          <input type = "checkbox" name="Cantar " value="no"> Cantar 
+          <input type = "checkbox" name="Leer " value="no"> Leer <br>
+          <input type = "checkbox" name="escuchar " value="no"> Escuchar Música 
+          <input type = "checkbox" name="ejercicio " value="no"> Hacer Ejercicio <br>
+          <input type = "checkbox" name="otro " value="no"> otros <br>
+          <br><br><br><br>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+
+</SELECT>
+    </form>
+    </body>
+</html>
